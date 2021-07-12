@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="card storyCard" style="margin: 30px 0 30px 0">
+        <div class="card-content">
+            <div class="row">
+
+                <h4 class="storyCardTitle">Add a Story</h4>
+
+                <form action="/stories" method="POST" class="col s12">
+                    <div class="row">
+                        <div class="input-field">
+                            <input type="text" id="title" name="title">
+                            <label for="title">Title</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                            <select id="status" name="status">
+                                <option value="public" selected>Public</option>
+                                <option value="private">Private</option>
+                            </select>
+                            <label for="status">Status</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field">
+                            <h5>Tell Us Your Story:</h5>
+                            <textarea id="body" name="body"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Save" class="btn">
+                        <a href="/stories" class="btn orange">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="container col s12">
+        
+    <h2 class="center-align">Welcome to your Dashboard {{name}}</h2>
+    <br><br><br>
+
+    {{#if stories}}
+            <div class="card">
+                <div class="card-content">
+                    <table class="centered highlight responsive-table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Edit</th>
+                                <th>Delete</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {{#each stories}}
+                                <tr>
+                                    <td>
+                                        <a href="/stories/{{_id}}">{{title}}</a>
+                                    </td>
+                                    
+                                    <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm a'}}</td>
+                                    
+                                    <td>
+                                        <span class="status">{{status}}</span>
+                                    </td>
+                                    
+                                    <td>
+                                        <a href="/stories/edit/{{_id}}" class="btn"><i class="fas fa-edit"></i></a>
+                                    </td>
+                                    <td>
+                                        <form action="/stories/{{_id}}?_method=DELETE" method="POST" id="delete-form">
+                                            <button type="submit" class="btn red"><i class="fas fa-trash"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+
+    {{else}}
+        <h1 class="center-align">Add Stories</h1>
+    {{/if}}
+    </div>
+</div>
+

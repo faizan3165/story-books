@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(61, 61, 61);
+}
+
+p {
+    margin: 10px 0 !important;
+}
+
+h1,h2,h3{
+    color: whitesmoke;
+}
+
+hr {
+    width: 60%;
+}
+
+.login-container {
+    width: 400px;
+    margin-top: 200px;
+    text-align: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.storyCard {
+    /* background-color: whitesmoke; */
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 2px;
+    color: rgb(49, 49, 49);
+    width: 100%
+}
+
+.storyCardTitle {
+    display: flex;
+    justify-content: center;
+    color: rgb(49, 49, 49)
+}
+
+.fa-small {
+    font-size: 17px !important;
+}
+
+.btn-float {
+    float: left;
+    margin-right: 10px;
+}
+
+.story-title {
+    padding: 13px 0 0 13px;
+}
+
+.logged-user {
+    width: 50px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
