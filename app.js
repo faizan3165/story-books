@@ -56,7 +56,8 @@ app.use((req, res, next) => {
     res.locals.user = req.user || null;
     if (req.user) {   
         res.locals.image = req.user.image ;
-        res.locals.id = req.user._id ;
+        res.locals.id = req.user._id;
+        res.locals.story = req.story
     } else {
         res.locals.image = null;
         res.locals.id = null;
